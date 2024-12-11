@@ -1,59 +1,59 @@
 # CSRD Report Generator
 
-A web application for creating, editing, and generating CSRD-compliant reports using AI-assisted prompts.
+A web application for generating CSRD (Corporate Sustainability Reporting Directive) documentation with AI integration.
+
+## Project Status
+
+### Phase 1: Foundation and Architecture 
+- Project Setup
+- Environment & Port Configuration
+- Basic API Endpoint & Health Check
+- Testing Setup
+- CI/CD Pipeline
+
+Next Phase: Phase 2 - Core Document Management
+
+## Development Setup
+
+### Prerequisites
+- Node.js (LTS version)
+- npm
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/SGLBCH/csrd-report-generator.git
+   cd csrd-report-generator
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Set up environment variables:
+   - Copy `.env.development` files in both `frontend/` and `backend/` directories
+   - See `ENV_SETUP.md` for detailed configuration
+
+### Running the Application
+```bash
+# Start both frontend and backend in development mode
+npm run dev
+
+# Run tests
+npm run test
+```
+
+Frontend: http://localhost:3000
+Backend: http://localhost:4000
 
 ## Project Structure
-
 ```
 csrd-report-generator/
-├── frontend/          # React + Vite frontend application
-├── backend/          # Node.js + Express backend application
-├── input/            # Input files and configurations
-├── output/           # Generated reports and outputs
-└── src/             # Shared source code
+├── frontend/          # React + Vite frontend
+├── backend/           # Node.js + Express backend
+├── .github/           # GitHub Actions workflows
+└── docs/             # Project documentation
 ```
 
-## Quick Start
-
-1. Install dependencies:
-```bash
-npm run install-all
-```
-
-2. Start development servers:
-```bash
-npm run dev
-```
-
-This will start:
-- Frontend: http://localhost:3000
-- Backend: http://localhost:4000
-
-## Development
-
-- Frontend runs on port 3000 with Vite's development server
-- Backend runs on port 4000 with Node.js/Express
-- Frontend proxies API requests to the backend automatically
-
-## Testing
-
-Run all tests:
-```bash
-npm test
-```
-
-Or individually:
-```bash
-npm run test:frontend
-npm run test:backend
-```
-
-## Environment Setup
-
-See `ENV_SETUP.md` for detailed environment configuration instructions.
-
-## Documentation
-
-- `ENV_SETUP.md` - Environment configuration guide
-- `API_DOCS.md` - API documentation (coming soon)
-- `AUTH_TESTING.md` - Authentication testing guide (coming soon)
+For more details about the project roadmap and features, see `input/ROADMAP.md`.
